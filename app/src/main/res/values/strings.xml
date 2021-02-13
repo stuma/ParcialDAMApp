@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DAMParcialApp</string>
+    <string name="titulo">App de prueba</string>
+    <string name="input">Ingrese su dato aquí</string>
+    <string name="button_ver_datos">Ver datos</string>
+    <string name="button_guardar_datos">Guardar</string>
+    <string name="valido">Dato Valido?</string>
+</resources>
