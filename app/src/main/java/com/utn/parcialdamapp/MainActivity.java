@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements DatoRepository.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DatoRepository repository = new DatoRepository(MainActivity.super.getApplication(), callback);
+        repository.findAll();
         Dato dato = new Dato();
 
         toggleButton = findViewById(R.id.toggle_valido);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements DatoRepository.On
             @Override
             public void onClick(View view) {
                 listView.setVisibility(View.VISIBLE);
-                repository.findAll();
+
 
                 List<String> listaDatosAplanados = new ArrayList<>();
 
